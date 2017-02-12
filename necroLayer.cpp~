@@ -1,0 +1,13 @@
+#include "necroLayer.h"
+
+necroLayer::necroLayer()
+{
+  tiles=new std::vector<necroTile>();
+}
+
+necroLayer::~necroLayer()
+{
+  for(std::vector<necroTile >::iterator it = tiles->begin();it != tiles->end(); ++it)
+    delete (*it);
+  delete tiles;
+}

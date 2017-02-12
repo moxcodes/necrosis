@@ -1,0 +1,12 @@
+#ifndef NECROSCENE_H
+#define NECROSCENE_H
+
+class necroScene{
+  std::vector<necroLayer>* layers;
+ public:
+  necroScene();
+  ~necroScene();
+  void renderScene(SDL_Renderer* gRenderer,SDL_Window* gWindow);
+}
+
+#endif
